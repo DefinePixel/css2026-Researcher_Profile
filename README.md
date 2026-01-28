@@ -1,4 +1,4 @@
-# 🎈 Blank app template
+# Researcher Profile
 
 A simple Streamlit app template for you to modify!
 
