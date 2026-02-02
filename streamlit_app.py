@@ -8,11 +8,11 @@ Created on Tue Jan 28 13:38:34 2026
 import streamlit as st
 import pandas as pd
 import numpy as np
+from streamlit.components.v1 import html
 import random
 import email
 import mailbox
 import time
-
 
 # 1. Page Configuration
 st.set_page_config(page_title="Student Researcher Profile", page_icon="🎓", layout="wide")
@@ -81,17 +81,12 @@ elif selection == "Research Projects":
             }
 
             /* Style buttons inside game_area */
-            .st-key-game_area [data-testid="stButton"] > button {
+            .st-key-game_area .stButton > button {
                 border: 2px solid #000;
                 border-radius: 0px;
                 transition: 0.2s;
                 width: 100%;
             }
-
-            .st-key-game_area [data-testid="stButton"] > button:hover {
-                background-color: #fc4e7d !important;
-                color: #000 !important;
-            }   
             </style>
             """, unsafe_allow_html=True)   
             
