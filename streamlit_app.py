@@ -65,7 +65,7 @@ elif selection == "Research Projects":
         st.write("Created a web app using Streamlit for [CHPC 2026 Summer School].")
         st.write("Check out the code on [GitHub](https://github.com/DefinePixel/css2026-Researcher_Profile)")
 
-    with st.expander("Project 3: Mini Memory Game", expanded=True):
+    with st.expander("Project 3: Mini Memory Game"):
         # font using a unique key 'game_area'
         with st.container(key="game_area"):
             # styles strictly to this container !!!!DOESN"T WORK
