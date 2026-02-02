@@ -142,41 +142,41 @@ elif selection == "Research Projects":
                     st.button("Reset")
 
 
-    with st.expander("Project 4: File Transfer Application"):
+        with st.expander("Project 4: File Transfer Application"):
         st.write("A file transfer application using FRP (Fast Reverse Proxy).")
         st.markdown("**How it works:** This app uses **FRP** to tunnel local traffic through a public server, allowing you to securely share files from a private network without complex port forwarding.")
+        
         # 1. Background Information
         st.markdown("**Steps to Use the App:**")
         st.markdown("1. Upload a file using the uploader below.\n2. Click 'Generate Secure Link' to create a public URL via FRP.\n3. Share the link for others to download the file securely.")
     
-    #File Upload Logic
-    uploaded_file = st.file_uploader("Choose a file to transfer", type=['pdf', 'zip', 'csv', 'txt'])
-    
-    if uploaded_file is not None:
-        # Streamlit handles the file as a BytesIO object in memory
-        file_bytes = uploaded_file.getvalue()
-        st.success(f"File '{uploaded_file.name}' ready for transfer!")
-
-        #Action Buttons
-        col1, col2 = st.columns(2)
-        with col1:
-            if st.button("Generate Secure Link"):
-                # Logic: In a real app, this would trigger the FRP tunnel 
-                # and return the public URL mapped to your local instance.
-                st.code(f"http://your-public-frp-server.com{uploaded_file.name}")
+        # 2. File Upload Logic (Indented to stay inside the expander)
+        uploaded_file = st.file_uploader("Choose a file to transfer", type=['pdf', 'zip', 'csv', 'txt'], key="project4_uploader")
         
-        with col2:
-            # Download button for immediate local verification
-            st.download_button(
-                label="Verify & Download",
-                data=file_bytes,
-                file_name=uploaded_file.name,
-                mime="application/octet-stream"
-            )
+        if uploaded_file is not None:
+            # Streamlit handles the file as a BytesIO object in memory
+            file_bytes = uploaded_file.getvalue()
+            st.success(f"File '{uploaded_file.name}' ready for transfer!")
 
-    # 4. FRP Configuration Snippet
-    with st.status("View FRP Configuration"):
-        st.code("""
+            # 3. Action Buttons
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("Generate Secure Link"):
+                    # Logic: Generates the mapped URL (Source: https://gofrp.org)
+                    st.code(f"http://your-public-frp-server.com{uploaded_file.name}")
+            
+            with col2:
+                # Download button using st.download_button (Source: https://docs.streamlit.io)
+                st.download_button(
+                    label="Verify & Download",
+                    data=file_bytes,
+                    file_name=uploaded_file.name,
+                    mime="application/octet-stream"
+                )
+
+        # 4. FRP Configuration Snippet
+        with st.status("View FRP Configuration"):
+            st.code("""
 # frpc.ini (Client side on your machine)
 [common]
 server_addr = x.x.x.x
@@ -186,7 +186,8 @@ server_port = 7000
 type = http
 local_port = 8501
 custom_domains = your-public-frp-server.com
-        """, language="ini")
+            """, language="ini")
+
 
     with st.expander("Project 5: Data Cleaning Pipeline"):
         st.write("Automated data cleaning using Python scripts.")
