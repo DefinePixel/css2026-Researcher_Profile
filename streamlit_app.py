@@ -143,14 +143,14 @@ elif selection == "Research Projects":
 
 
         with st.expander("Project 4: File Transfer Application"):
-        st.write("A file transfer application using FRP (Fast Reverse Proxy).")
-        st.markdown("**How it works:** This app uses **FRP** to tunnel local traffic through a public server, allowing you to securely share files from a private network without complex port forwarding.")
+            st.write("A file transfer application using FRP (Fast Reverse Proxy).")
+            st.markdown("**How it works:** This app uses **FRP** to tunnel local traffic through a public server, allowing you to securely share files from a private network without complex port forwarding.")
         
-        # 1. Background Information
-        st.markdown("**Steps to Use the App:**")
-        st.markdown("1. Upload a file using the uploader below.\n2. Click 'Generate Secure Link' to create a public URL via FRP.\n3. Share the link for others to download the file securely.")
+            # 1. Background Information
+            st.markdown("**Steps to Use the App:**")
+            st.markdown("1. Upload a file using the uploader below.\n2. Click 'Generate Secure Link' to create a public URL via FRP.\n3. Share the link for others to download the file securely.")
     
-        # 2. File Upload Logic (Indented to stay inside the expander)
+            # 2. File Upload Logic (Indented to stay inside the expander)
         uploaded_file = st.file_uploader("Choose a file to transfer", type=['pdf', 'zip', 'csv', 'txt'], key="project4_uploader")
         
         if uploaded_file is not None:
