@@ -47,7 +47,7 @@ if selection == "Researcher Profile":
         st.image("https://images2.pics4learning.com/catalog/c/cat0635227.jpg", caption="[DefinePixel]")
     with col2:
         st.subheader("About Me")
-        st.write("I am a passionate student researcher focused on Information Systems and Data Management.")
+        st.write("I am a passionate student researcher focused on Information Systems and Data Management. I enjoy learning about new technologies and applying them to solve real-world problems. And I love cats!")
         st.write("**Key Skills:** Java, Python, Streamlit, Data Visualization, Databases.")
         st.write("**Interests:** Data Analysis, Web Development, Databases.")
         st.write("Feel free to explore my projects and get in touch!")
