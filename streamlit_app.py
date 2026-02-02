@@ -63,7 +63,7 @@ elif selection == "Research Projects":
     
     with st.expander("Project 2: Web Application Development"):
         st.write("Created a web app using Streamlit for [CHPC 2026 Summer School].")
-        st.write("Check out the code on [GitHub](https://github.com)")
+        st.write("Check out the code on [GitHub](https://github.com/DefinePixel/css2026-Researcher_Profile)")
 
     with st.expander("Project 3: Mini Memory Game", expanded=True):
         # font using a unique key 'game_area'
