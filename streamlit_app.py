@@ -36,11 +36,12 @@ if selection == "Researcher Profile":
     institution = "North West University"
 
     # Display basic profile information
+    st.write("---")
     st.write(f"**Name:** {name}")
     st.write(f"**Field of Research:** {field}")
     st.write(f"**Institution:** {institution}")
+    st.write("---")
     
-
     col1, col2 = st.columns([1, 2])
     with col1:
         st.image("https://images2.pics4learning.com/catalog/c/cat0635227.jpg", caption="[DefinePixel]")
