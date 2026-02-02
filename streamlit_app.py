@@ -209,7 +209,8 @@ elif selection == "Sources":
     st.title("📚 Publications & Sources")
     st.markdown("- **[API Reference - Streamlit Docs]**, *Streamlit Documentation*, docs.streamlit.io/develop/api-reference.")
     st.markdown("- **[A Comprehensive Guide to Building Interactive Data Applications with Streamlit]**, *Medium*, 23 Feb. 2025, share.google/JDAk8rBJSlXpmhhkd.")
-    st.markdown("- **[Snake Game on Streamlit]**, *Streamlit*, 14 July 2024, share.google/LydD8OFIz5Vj95aJJ. Accessed 2 Feb. 2026.")
+    st.markdown("- **[Close up profile of a white Persian cat Page, Brian. cat0635227.jpg]**, *Pics4Learning*, 1973. 2 Feb 2026")
+    st.markdown("- **[Snake Game on Streamlit]**, *Streamlit*, 14 July 2024, share.google/LydD8OFIz5Vj95aJJ.")
     st.markdown("- **[Best Practices for Streamlit Development]**, *Medium*, 23 Feb. 2025, share.google/501iOQa6IXZXEMMwp.")
 
 # 5. Contact Section
