@@ -8,7 +8,6 @@ Created on Tue Jan 28 13:38:34 2026
 import streamlit as st
 import pandas as pd
 import numpy as np
-from streamlit.components.v1 import html
 import random
 import email
 import mailbox
@@ -87,6 +86,7 @@ elif selection == "Research Projects":
                 transition: 0.2s;
                 width: 100%;
             }
+
             </style>
             """, unsafe_allow_html=True)   
             
