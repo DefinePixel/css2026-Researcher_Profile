@@ -13,6 +13,7 @@ import email
 import mailbox
 import time
 
+
 # 1. Page Configuration
 st.set_page_config(page_title="Student Researcher Profile", page_icon="🎓", layout="wide")
 
@@ -69,29 +70,31 @@ elif selection == "Research Projects":
     with st.expander("Project 3: Mini Memory Game"):
         # font using a unique key 'game_area'
         with st.container(key="game_area"):
-            # styles strictly to this container !!!!DOESN"T WORK
+            # styles strictly to this container
             st.markdown("""
             <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
             <style>
-            /* Targets only the container with key 'game_area' */
-            [data-testid="stVerticalBlockBorderWrapper"]:has(.st-key-game_area) * {
+            /* Apply font to all elements inside the game_area container */
+            .st-key-game_area * {
                 font-family: 'Pixelify Sans', sans-serif !important;
-                font-size: 20.5px;
+                font-size: 20.5px !important;
             }
-            /* Scoped button styling */
-            .st-key-game_area .stButton>button {
+
+            /* Style buttons inside game_area */
+            .st-key-game_area [data-testid="stButton"] > button {
                 border: 2px solid #000;
                 border-radius: 0px;
                 transition: 0.2s;
                 width: 100%;
             }
-            .st-key-game_area .stButton>button:hover {
-                background-color: #fc4e7d;
-                color: #000;
-            }
-            </style>
-            """, unsafe_allow_html=True)
 
+            .st-key-game_area [data-testid="stButton"] > button:hover {
+                background-color: #fc4e7d !important;
+                color: #000 !important;
+            }   
+            </style>
+            """, unsafe_allow_html=True)   
+            
             st.title("🕹️ Mini Memory Game")
             st.write("Test your memory skills! Can you remember the sequence generated?")
             st.write("When ready, click 'Start New Game' to see the pattern for 3 seconds, then input your guess.")
@@ -230,3 +233,4 @@ elif selection == "Contact":
 #Footer
 st.markdown("---")
 st.caption("Developed using Streamlit | © 2026 [DefinePixel]")
+
