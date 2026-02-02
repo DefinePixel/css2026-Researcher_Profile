@@ -57,7 +57,7 @@ elif selection == "Research Projects":
     st.title("🔬 Research & Projects")
     
     with st.expander("Project 1: Interactive Data Analysis"):
-        st.write("Analysis of [Topic] using [Tools].")
+        st.write("Developed an interactive data analysis tool using Streamlit.")
         if st.button("Run Mini Demo"):
             st.success("Project simulation running...")
             st.line_chart([10, 20, 15, 30, 25])
