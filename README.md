@@ -22,7 +22,7 @@ To run the Streamlit app locally, follow these steps:
    ```
 4. Run the Streamlit app:
    ```
-   streamlit run app.py
+   streamlit run_app.py
    ```
    
 ## Usage
