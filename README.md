@@ -11,7 +11,7 @@ To run the Streamlit app locally, follow these steps:
 1. Clone the repository:
    ```
    git clone <repository_url>
-   '''
+   ```
 2. Navigate to the project directory:
    ```
    cd Streamlit_App_Assignment
