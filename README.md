@@ -1,19 +1,37 @@
-# Researcher Profile
+# Streamlit App Assignment
+This repository contains a Streamlit application developed as part of an assignment. The app demonstrates various features of Streamlit and provides an interactive user experience.
 
-A simple Streamlit app template for you to modify!
+## Features
+- Interactive UI components
+- Data visualization
+- Real-time updates
+- User input handling
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
-
-### How to run it on your own machine
-
-1. Install the requirements
-
+To run the Streamlit app locally, follow these steps:
+1. Clone the repository:
    ```
-   $ pip install -r requirements.txt
+   git clone <repository_url>
+   '''
+2. Navigate to the project directory:
    ```
+   cd Streamlit_App_Assignment
+   ```
+3. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+4. Run the Streamlit app:
+   ```
+   streamlit run app.py
+   ```
+   
+## Usage
+Once the app is running, open your web browser and go to `http://localhost:8501` to access the application. Explore the various features and interact with the UI components.
 
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## Contributing 
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.   
+4. Push your changes to your forked repository.
+5. Open a pull request to the main repository.
