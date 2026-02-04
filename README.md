@@ -27,11 +27,3 @@ To run the Streamlit app locally, follow these steps:
    
 ## Usage
 Once the app is running, open your web browser and go to `http://localhost:8501` to access the application. Explore the various features and interact with the UI components.
-
-## Contributing 
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.   
-4. Push your changes to your forked repository.
-5. Open a pull request to the main repository.
