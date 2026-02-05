@@ -10,7 +10,7 @@ This repository contains a Streamlit application developed as part of an assignm
 To run the Streamlit app locally, follow these steps:
 1. Clone the repository:
    ```
-   git clone <repository_url>
+   git clone <https://github.com/DefinePixel/css2026-Researcher_Profile.git>
    ```
 2. Navigate to the project directory:
    ```
@@ -22,7 +22,7 @@ To run the Streamlit app locally, follow these steps:
    ```
 4. Run the Streamlit app:
    ```
-   streamlit run_app.py
+   streamlit run streamlit_app.py
    ```
    
 ## Usage
