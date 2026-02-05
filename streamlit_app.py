@@ -216,7 +216,7 @@ elif selection == "Contact":
     st.title("📬 Contact Information")
     st.write("Feel free to reach out to me for collaborations or inquiries!")
     st.write("You can reach me at the following links:")
-    st.markdown("[LinkedIn](www.linkedin.com/in/mpho-nhlapo-82683b232) | [GitHub](https://github.com/DefinePixel) | [Email](mailto:pixelseren@gmail.com)")
+    st.markdown("[LinkedIn](www.linkedin.com) | [GitHub](https://github.com/DefinePixel) | [Email](mailto:pixelseren@gmail.com)")
   
     # Simple Contact Form
     with st.form("contact_form"):
