@@ -1,4 +1,4 @@
-# Streamlit App Assignment
+# Student Researcher Profile
 This repository contains a Streamlit application developed as part of an assignment. The app demonstrates various features of Streamlit and provides an interactive user experience.
 
 ## Features
